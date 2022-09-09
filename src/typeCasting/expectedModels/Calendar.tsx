@@ -4,4 +4,5 @@ export interface Calendar{
     year: string,
     date: string,
     month: string,
+    lastDate: string,
 }

@@ -7,7 +7,7 @@ const initialState = {
     calendarFilter: {
         year:'2020',
         month:'01',
-        day:'01'
+        day:'28'
     },
     currentSnake: {
         vertical:'top', 
@@ -35,6 +35,11 @@ export default function AuthReducer(state = initialState, action: any) {
             return {
                 ...state,
                 calendar:action.load
+            }
+        case "SetCalendarFilter":
+            return {
+                ...state,
+                calendarFilter:action.load
             }
     }
 

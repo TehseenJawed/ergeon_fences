@@ -7,15 +7,15 @@ const CategoryItem = (props: any) => {
     const filterOption = useSelector(CALENDAR_FILTER)
     const calenderData = useSelector(CALENDAR)
     const generateRepeat = 'S'.repeat(7).split('')
-    console.log(" ==============>> ",calenderData);
-    
 
     return (
         <div className='calendar-horizontal'>
            {
             generateRepeat.map((v,i) => (
-                <div>
-                    {calenderData.day + i}
+                <div key={i} style={{ width: i == 0 ? 45 : 50 + i * 2 , height: i == 0 ? 45 : 50 + i*2 }}>
+                    {
+                        Number(calenderData.lastDate) < 7 - i || calenderData.lastDate == 'null' ? calenderData.day + i : ""
+                    }
                 </div>
             ))
            }

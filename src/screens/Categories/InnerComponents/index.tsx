@@ -1,5 +1,5 @@
-import CategoryItem from './horizontalCalendar';
+import HorizontalCalendar from './horizontalCalendar';
 
 export {
-    CategoryItem
+    HorizontalCalendar
 };

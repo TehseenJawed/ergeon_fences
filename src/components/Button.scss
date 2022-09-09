@@ -1,5 +1,16 @@
 .calendar-button{
     @extend .center-by-flex;
-    width: 50px;
+    width: 30px;
     height: 70px;
+    cursor: pointer;
+    :hover{
+        width: 30px;
+        height: 70px;
+        background-color: $body-hover;
+    }
+}
+
+.disableButton{
+    pointer-events: none;
+    opacity: 0.4;
 }
