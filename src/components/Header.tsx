@@ -21,7 +21,9 @@ const Header = () => {
         </div>
         <div className='header-logoidentifier'>
             <div>
-                <img onClick={backToCategory} src={BrandLogo} alt="Brand Logo" />
+                <div className='header-logo'>
+                    ERGEON TEST
+                </div>
                 <span onClick={backToCategory}>
                     {
                         loading ? <CircularProgress color={'secondary'} /> : "Categories"
