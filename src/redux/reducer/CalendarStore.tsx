@@ -7,7 +7,7 @@ const initialState = {
     calendarFilter: {
         year:'2020',
         month:'01',
-        day:'28'
+        day:'01'
     },
     currentSnake: {
         vertical:'top', 
