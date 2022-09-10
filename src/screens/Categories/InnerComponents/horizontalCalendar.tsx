@@ -24,7 +24,7 @@ const CategoryItem = (props: any) => {
         <div className='calendar-horizontal'>
            {
             generateRepeat.map((v,i) => (
-                <div key={i} style={{ width: i == 0 ? 45 : 50 + i * 2 , height: i == 0 ? 45 : 50 + i*2 }}>
+                <div key={i} >
                     {
                         Number(calenderData.lastDate) < 7 - i || calenderData.lastDate == 'null' ? calenderData.day + i : getLeftValue(i)
                     }
